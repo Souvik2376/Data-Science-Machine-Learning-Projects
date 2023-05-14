@@ -3,4 +3,4 @@ All of my Data Science &amp; Machine Learning Projects
 
 # License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT LICENSE](LICENSE)
