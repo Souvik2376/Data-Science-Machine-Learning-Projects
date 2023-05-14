@@ -1,0 +1,2299 @@
+2023-05-14 13:11:49,174:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-14 13:11:49,174:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-14 13:11:49,174:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-14 13:11:49,175:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-14 13:11:50,198:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-05-14 13:12:09,256:INFO:PyCaret ClassificationExperiment
+2023-05-14 13:12:09,256:INFO:Logging name: clf-default-name
+2023-05-14 13:12:09,256:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-05-14 13:12:09,256:INFO:version 3.0.0
+2023-05-14 13:12:09,256:INFO:Initializing setup()
+2023-05-14 13:12:09,256:INFO:self.USI: 45b4
+2023-05-14 13:12:09,256:INFO:self._variable_keys: {'_ml_usecase', 'y_test', 'exp_name_log', 'gpu_param', 'exp_id', '_available_plots', 'idx', 'USI', 'X', 'fold_shuffle_param', 'logging_param', 'data', 'fold_generator', 'fold_groups_param', 'n_jobs_param', 'X_test', 'X_train', 'html_param', 'log_plots_param', 'y_train', 'fix_imbalance', 'pipeline', 'target_param', 'y', 'gpu_n_jobs_param', 'seed', 'memory', 'is_multiclass'}
+2023-05-14 13:12:09,256:INFO:Checking environment
+2023-05-14 13:12:09,256:INFO:python_version: 3.9.12
+2023-05-14 13:12:09,256:INFO:python_build: ('main', 'Apr  4 2022 05:22:27')
+2023-05-14 13:12:09,256:INFO:machine: AMD64
+2023-05-14 13:12:09,256:INFO:platform: Windows-10-10.0.19045-SP0
+2023-05-14 13:12:09,256:INFO:Memory: svmem(total=7967965184, available=580136960, percent=92.7, used=7387828224, free=580136960)
+2023-05-14 13:12:09,256:INFO:Physical Core: 8
+2023-05-14 13:12:09,257:INFO:Logical Core: 16
+2023-05-14 13:12:09,257:INFO:Checking libraries
+2023-05-14 13:12:09,257:INFO:System:
+2023-05-14 13:12:09,257:INFO:    python: 3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)]
+2023-05-14 13:12:09,257:INFO:executable: C:\Users\ASUS\anaconda3\python.exe
+2023-05-14 13:12:09,257:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-05-14 13:12:09,257:INFO:PyCaret required dependencies:
+2023-05-14 13:12:09,257:INFO:                 pip: 21.2.4
+2023-05-14 13:12:09,257:INFO:          setuptools: 61.2.0
+2023-05-14 13:12:09,257:INFO:             pycaret: 3.0.0
+2023-05-14 13:12:09,257:INFO:             IPython: 8.2.0
+2023-05-14 13:12:09,257:INFO:          ipywidgets: 7.6.5
+2023-05-14 13:12:09,257:INFO:                tqdm: 4.64.0
+2023-05-14 13:12:09,257:INFO:               numpy: 1.21.5
+2023-05-14 13:12:09,257:INFO:              pandas: 1.4.2
+2023-05-14 13:12:09,257:INFO:              jinja2: 2.11.3
+2023-05-14 13:12:09,257:INFO:               scipy: 1.7.3
+2023-05-14 13:12:09,257:INFO:              joblib: 1.2.0
+2023-05-14 13:12:09,257:INFO:             sklearn: 1.0.2
+2023-05-14 13:12:09,257:INFO:                pyod: 1.0.9
+2023-05-14 13:12:09,257:INFO:            imblearn: 0.10.1
+2023-05-14 13:12:09,257:INFO:   category_encoders: 2.6.0
+2023-05-14 13:12:09,257:INFO:            lightgbm: 3.3.5
+2023-05-14 13:12:09,257:INFO:               numba: 0.55.1
+2023-05-14 13:12:09,257:INFO:            requests: 2.27.1
+2023-05-14 13:12:09,257:INFO:          matplotlib: 3.5.1
+2023-05-14 13:12:09,257:INFO:          scikitplot: 0.3.7
+2023-05-14 13:12:09,257:INFO:         yellowbrick: 1.5
+2023-05-14 13:12:09,257:INFO:              plotly: 5.6.0
+2023-05-14 13:12:09,258:INFO:             kaleido: 0.2.1
+2023-05-14 13:12:09,258:INFO:         statsmodels: 0.13.2
+2023-05-14 13:12:09,258:INFO:              sktime: 0.18.0
+2023-05-14 13:12:09,258:INFO:               tbats: 1.1.3
+2023-05-14 13:12:09,258:INFO:            pmdarima: 2.0.3
+2023-05-14 13:12:09,258:INFO:              psutil: 5.9.5
+2023-05-14 13:12:09,258:INFO:PyCaret optional dependencies:
+2023-05-14 13:12:09,271:INFO:                shap: Not installed
+2023-05-14 13:12:09,271:INFO:           interpret: Not installed
+2023-05-14 13:12:09,271:INFO:                umap: Not installed
+2023-05-14 13:12:09,271:INFO:    pandas_profiling: Not installed
+2023-05-14 13:12:09,271:INFO:  explainerdashboard: Not installed
+2023-05-14 13:12:09,271:INFO:             autoviz: Not installed
+2023-05-14 13:12:09,271:INFO:           fairlearn: Not installed
+2023-05-14 13:12:09,271:INFO:             xgboost: Not installed
+2023-05-14 13:12:09,271:INFO:            catboost: Not installed
+2023-05-14 13:12:09,271:INFO:              kmodes: Not installed
+2023-05-14 13:12:09,271:INFO:             mlxtend: Not installed
+2023-05-14 13:12:09,271:INFO:       statsforecast: Not installed
+2023-05-14 13:12:09,271:INFO:        tune_sklearn: Not installed
+2023-05-14 13:12:09,271:INFO:                 ray: Not installed
+2023-05-14 13:12:09,271:INFO:            hyperopt: Not installed
+2023-05-14 13:12:09,271:INFO:              optuna: Not installed
+2023-05-14 13:12:09,272:INFO:               skopt: Not installed
+2023-05-14 13:12:09,272:INFO:              mlflow: Not installed
+2023-05-14 13:12:09,272:INFO:              gradio: Not installed
+2023-05-14 13:12:09,272:INFO:             fastapi: Not installed
+2023-05-14 13:12:09,272:INFO:             uvicorn: Not installed
+2023-05-14 13:12:09,272:INFO:              m2cgen: Not installed
+2023-05-14 13:12:09,272:INFO:           evidently: Not installed
+2023-05-14 13:12:09,272:INFO:               fugue: Not installed
+2023-05-14 13:12:09,272:INFO:           streamlit: Not installed
+2023-05-14 13:12:09,272:INFO:             prophet: Not installed
+2023-05-14 13:12:09,272:INFO:None
+2023-05-14 13:12:09,272:INFO:Set up data.
+2023-05-14 13:12:09,281:INFO:Set up train/test split.
+2023-05-14 13:12:09,288:INFO:Set up index.
+2023-05-14 13:12:09,288:INFO:Set up folding strategy.
+2023-05-14 13:12:09,288:INFO:Assigning column types.
+2023-05-14 13:12:09,290:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-05-14 13:12:09,333:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-05-14 13:12:09,336:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-14 13:12:09,371:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,393:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,435:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-05-14 13:12:09,436:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-14 13:12:09,462:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,463:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,463:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-05-14 13:12:09,506:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-14 13:12:09,532:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,533:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,576:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-14 13:12:09,602:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,602:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,602:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-05-14 13:12:09,672:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,672:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,741:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,741:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,744:INFO:Preparing preprocessing pipeline...
+2023-05-14 13:12:09,746:INFO:Set up label encoding.
+2023-05-14 13:12:09,746:INFO:Set up simple imputation.
+2023-05-14 13:12:09,747:INFO:Set up column name cleaning.
+2023-05-14 13:12:09,772:INFO:Finished creating preprocessing pipeline.
+2023-05-14 13:12:09,778:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['radius_mean', 'texture_mean',
+                                             'perimeter_mean', 'area_mean',
+                                             'smoothness_mean',
+                                             'compactness_mean',
+                                             'conca...
+                                                              verbose=0))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2023-05-14 13:12:09,778:INFO:Creating final display dataframe.
+2023-05-14 13:12:09,854:INFO:Setup _display_container:                     Description             Value
+0                    Session id              3332
+1                        Target         diagnosis
+2                   Target type            Binary
+3                Target mapping        B: 0, M: 1
+4           Original data shape         (569, 31)
+5        Transformed data shape         (569, 31)
+6   Transformed train set shape         (398, 31)
+7    Transformed test set shape         (171, 31)
+8              Numeric features                30
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13               Fold Generator   StratifiedKFold
+14                  Fold Number                10
+15                     CPU Jobs                -1
+16                      Use GPU             False
+17               Log Experiment             False
+18              Experiment Name  clf-default-name
+19                          USI              45b4
+2023-05-14 13:12:09,933:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:09,934:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:10,004:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:10,004:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-14 13:12:10,004:INFO:setup() successfully completed in 0.75s...............
+2023-05-14 13:12:10,014:INFO:Initializing compare_models()
+2023-05-14 13:12:10,014:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-05-14 13:12:10,014:INFO:Checking exceptions
+2023-05-14 13:12:10,018:INFO:Preparing display monitor
+2023-05-14 13:12:10,052:INFO:Initializing Logistic Regression
+2023-05-14 13:12:10,053:INFO:Total runtime is 1.64945920308431e-05 minutes
+2023-05-14 13:12:10,056:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:10,056:INFO:Initializing create_model()
+2023-05-14 13:12:10,056:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:10,056:INFO:Checking exceptions
+2023-05-14 13:12:10,056:INFO:Importing libraries
+2023-05-14 13:12:10,056:INFO:Copying training dataset
+2023-05-14 13:12:10,061:INFO:Defining folds
+2023-05-14 13:12:10,061:INFO:Declaring metric variables
+2023-05-14 13:12:10,064:INFO:Importing untrained model
+2023-05-14 13:12:10,068:INFO:Logistic Regression Imported successfully
+2023-05-14 13:12:10,074:INFO:Starting cross validation
+2023-05-14 13:12:10,075:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:19,934:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,936:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,949:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,952:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,965:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,968:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,971:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:19,973:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:12:20,093:INFO:Calculating mean and std
+2023-05-14 13:12:20,097:INFO:Creating metrics dataframe
+2023-05-14 13:12:20,116:INFO:Uploading results into container
+2023-05-14 13:12:20,117:INFO:Uploading model into container now
+2023-05-14 13:12:20,119:INFO:_master_model_container: 1
+2023-05-14 13:12:20,120:INFO:_display_container: 2
+2023-05-14 13:12:20,120:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-14 13:12:20,120:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:20,289:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:20,289:INFO:Creating metrics dataframe
+2023-05-14 13:12:20,297:INFO:Initializing K Neighbors Classifier
+2023-05-14 13:12:20,298:INFO:Total runtime is 0.170760444800059 minutes
+2023-05-14 13:12:20,302:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:20,302:INFO:Initializing create_model()
+2023-05-14 13:12:20,302:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:20,302:INFO:Checking exceptions
+2023-05-14 13:12:20,302:INFO:Importing libraries
+2023-05-14 13:12:20,302:INFO:Copying training dataset
+2023-05-14 13:12:20,306:INFO:Defining folds
+2023-05-14 13:12:20,306:INFO:Declaring metric variables
+2023-05-14 13:12:20,312:INFO:Importing untrained model
+2023-05-14 13:12:20,315:INFO:K Neighbors Classifier Imported successfully
+2023-05-14 13:12:20,323:INFO:Starting cross validation
+2023-05-14 13:12:20,324:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:24,556:INFO:Calculating mean and std
+2023-05-14 13:12:24,561:INFO:Creating metrics dataframe
+2023-05-14 13:12:24,578:INFO:Uploading results into container
+2023-05-14 13:12:24,579:INFO:Uploading model into container now
+2023-05-14 13:12:24,580:INFO:_master_model_container: 2
+2023-05-14 13:12:24,580:INFO:_display_container: 2
+2023-05-14 13:12:24,580:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-05-14 13:12:24,580:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:24,729:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:24,729:INFO:Creating metrics dataframe
+2023-05-14 13:12:24,736:INFO:Initializing Naive Bayes
+2023-05-14 13:12:24,736:INFO:Total runtime is 0.24472708304723104 minutes
+2023-05-14 13:12:24,740:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:24,741:INFO:Initializing create_model()
+2023-05-14 13:12:24,741:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:24,741:INFO:Checking exceptions
+2023-05-14 13:12:24,741:INFO:Importing libraries
+2023-05-14 13:12:24,741:INFO:Copying training dataset
+2023-05-14 13:12:24,745:INFO:Defining folds
+2023-05-14 13:12:24,745:INFO:Declaring metric variables
+2023-05-14 13:12:24,750:INFO:Importing untrained model
+2023-05-14 13:12:24,753:INFO:Naive Bayes Imported successfully
+2023-05-14 13:12:24,761:INFO:Starting cross validation
+2023-05-14 13:12:24,762:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:24,962:INFO:Calculating mean and std
+2023-05-14 13:12:24,963:INFO:Creating metrics dataframe
+2023-05-14 13:12:24,973:INFO:Uploading results into container
+2023-05-14 13:12:24,974:INFO:Uploading model into container now
+2023-05-14 13:12:24,974:INFO:_master_model_container: 3
+2023-05-14 13:12:24,974:INFO:_display_container: 2
+2023-05-14 13:12:24,974:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-05-14 13:12:24,974:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:25,088:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:25,088:INFO:Creating metrics dataframe
+2023-05-14 13:12:25,095:INFO:Initializing Decision Tree Classifier
+2023-05-14 13:12:25,095:INFO:Total runtime is 0.25071288347244264 minutes
+2023-05-14 13:12:25,097:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:25,098:INFO:Initializing create_model()
+2023-05-14 13:12:25,098:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:25,098:INFO:Checking exceptions
+2023-05-14 13:12:25,098:INFO:Importing libraries
+2023-05-14 13:12:25,098:INFO:Copying training dataset
+2023-05-14 13:12:25,102:INFO:Defining folds
+2023-05-14 13:12:25,102:INFO:Declaring metric variables
+2023-05-14 13:12:25,106:INFO:Importing untrained model
+2023-05-14 13:12:25,111:INFO:Decision Tree Classifier Imported successfully
+2023-05-14 13:12:25,118:INFO:Starting cross validation
+2023-05-14 13:12:25,119:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:25,281:INFO:Calculating mean and std
+2023-05-14 13:12:25,283:INFO:Creating metrics dataframe
+2023-05-14 13:12:25,291:INFO:Uploading results into container
+2023-05-14 13:12:25,291:INFO:Uploading model into container now
+2023-05-14 13:12:25,292:INFO:_master_model_container: 4
+2023-05-14 13:12:25,292:INFO:_display_container: 2
+2023-05-14 13:12:25,292:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=3332, splitter='best')
+2023-05-14 13:12:25,292:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:25,399:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:25,399:INFO:Creating metrics dataframe
+2023-05-14 13:12:25,411:INFO:Initializing SVM - Linear Kernel
+2023-05-14 13:12:25,411:INFO:Total runtime is 0.2559809446334839 minutes
+2023-05-14 13:12:25,414:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:25,414:INFO:Initializing create_model()
+2023-05-14 13:12:25,414:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:25,415:INFO:Checking exceptions
+2023-05-14 13:12:25,415:INFO:Importing libraries
+2023-05-14 13:12:25,415:INFO:Copying training dataset
+2023-05-14 13:12:25,419:INFO:Defining folds
+2023-05-14 13:12:25,419:INFO:Declaring metric variables
+2023-05-14 13:12:25,422:INFO:Importing untrained model
+2023-05-14 13:12:25,426:INFO:SVM - Linear Kernel Imported successfully
+2023-05-14 13:12:25,437:INFO:Starting cross validation
+2023-05-14 13:12:25,439:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:25,534:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,537:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,541:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,553:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,554:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,564:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,566:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,577:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,581:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,589:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,593:INFO:Calculating mean and std
+2023-05-14 13:12:25,595:INFO:Creating metrics dataframe
+2023-05-14 13:12:25,605:INFO:Uploading results into container
+2023-05-14 13:12:25,606:INFO:Uploading model into container now
+2023-05-14 13:12:25,606:INFO:_master_model_container: 5
+2023-05-14 13:12:25,607:INFO:_display_container: 2
+2023-05-14 13:12:25,607:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=3332, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-05-14 13:12:25,607:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:25,731:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:25,732:INFO:Creating metrics dataframe
+2023-05-14 13:12:25,739:INFO:Initializing Ridge Classifier
+2023-05-14 13:12:25,739:INFO:Total runtime is 0.2614486416180929 minutes
+2023-05-14 13:12:25,742:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:25,743:INFO:Initializing create_model()
+2023-05-14 13:12:25,743:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:25,743:INFO:Checking exceptions
+2023-05-14 13:12:25,743:INFO:Importing libraries
+2023-05-14 13:12:25,743:INFO:Copying training dataset
+2023-05-14 13:12:25,749:INFO:Defining folds
+2023-05-14 13:12:25,749:INFO:Declaring metric variables
+2023-05-14 13:12:25,754:INFO:Importing untrained model
+2023-05-14 13:12:25,757:INFO:Ridge Classifier Imported successfully
+2023-05-14 13:12:25,765:INFO:Starting cross validation
+2023-05-14 13:12:25,766:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:25,839:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.00652e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,839:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.02234e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,840:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.05899e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,847:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.89264e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,854:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.37385e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,862:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.12168e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,864:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.41984e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,868:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,870:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,870:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,875:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.84064e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,878:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.09172e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,879:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,883:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,886:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,886:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=4.7503e-09): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-05-14 13:12:25,890:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,901:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,903:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,903:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-14 13:12:25,918:INFO:Calculating mean and std
+2023-05-14 13:12:25,920:INFO:Creating metrics dataframe
+2023-05-14 13:12:25,928:INFO:Uploading results into container
+2023-05-14 13:12:25,928:INFO:Uploading model into container now
+2023-05-14 13:12:25,929:INFO:_master_model_container: 6
+2023-05-14 13:12:25,929:INFO:_display_container: 2
+2023-05-14 13:12:25,929:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize='deprecated', positive=False,
+                random_state=3332, solver='auto', tol=0.001)
+2023-05-14 13:12:25,929:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:26,033:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:26,033:INFO:Creating metrics dataframe
+2023-05-14 13:12:26,041:INFO:Initializing Random Forest Classifier
+2023-05-14 13:12:26,041:INFO:Total runtime is 0.26647721131642665 minutes
+2023-05-14 13:12:26,044:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:26,044:INFO:Initializing create_model()
+2023-05-14 13:12:26,044:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:26,044:INFO:Checking exceptions
+2023-05-14 13:12:26,044:INFO:Importing libraries
+2023-05-14 13:12:26,045:INFO:Copying training dataset
+2023-05-14 13:12:26,048:INFO:Defining folds
+2023-05-14 13:12:26,048:INFO:Declaring metric variables
+2023-05-14 13:12:26,051:INFO:Importing untrained model
+2023-05-14 13:12:26,054:INFO:Random Forest Classifier Imported successfully
+2023-05-14 13:12:26,061:INFO:Starting cross validation
+2023-05-14 13:12:26,062:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:26,888:INFO:Calculating mean and std
+2023-05-14 13:12:26,890:INFO:Creating metrics dataframe
+2023-05-14 13:12:26,903:INFO:Uploading results into container
+2023-05-14 13:12:26,903:INFO:Uploading model into container now
+2023-05-14 13:12:26,904:INFO:_master_model_container: 7
+2023-05-14 13:12:26,904:INFO:_display_container: 2
+2023-05-14 13:12:26,904:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=3332, verbose=0, warm_start=False)
+2023-05-14 13:12:26,904:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:27,013:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:27,013:INFO:Creating metrics dataframe
+2023-05-14 13:12:27,021:INFO:Initializing Quadratic Discriminant Analysis
+2023-05-14 13:12:27,021:INFO:Total runtime is 0.28281420071919766 minutes
+2023-05-14 13:12:27,024:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:27,024:INFO:Initializing create_model()
+2023-05-14 13:12:27,024:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:27,024:INFO:Checking exceptions
+2023-05-14 13:12:27,024:INFO:Importing libraries
+2023-05-14 13:12:27,024:INFO:Copying training dataset
+2023-05-14 13:12:27,028:INFO:Defining folds
+2023-05-14 13:12:27,028:INFO:Declaring metric variables
+2023-05-14 13:12:27,032:INFO:Importing untrained model
+2023-05-14 13:12:27,035:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-05-14 13:12:27,041:INFO:Starting cross validation
+2023-05-14 13:12:27,042:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:27,305:INFO:Calculating mean and std
+2023-05-14 13:12:27,306:INFO:Creating metrics dataframe
+2023-05-14 13:12:27,321:INFO:Uploading results into container
+2023-05-14 13:12:27,321:INFO:Uploading model into container now
+2023-05-14 13:12:27,322:INFO:_master_model_container: 8
+2023-05-14 13:12:27,322:INFO:_display_container: 2
+2023-05-14 13:12:27,322:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-05-14 13:12:27,322:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:27,439:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:27,439:INFO:Creating metrics dataframe
+2023-05-14 13:12:27,447:INFO:Initializing Ada Boost Classifier
+2023-05-14 13:12:27,447:INFO:Total runtime is 0.2899157842000326 minutes
+2023-05-14 13:12:27,450:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:27,450:INFO:Initializing create_model()
+2023-05-14 13:12:27,450:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:27,450:INFO:Checking exceptions
+2023-05-14 13:12:27,450:INFO:Importing libraries
+2023-05-14 13:12:27,451:INFO:Copying training dataset
+2023-05-14 13:12:27,454:INFO:Defining folds
+2023-05-14 13:12:27,454:INFO:Declaring metric variables
+2023-05-14 13:12:27,457:INFO:Importing untrained model
+2023-05-14 13:12:27,462:INFO:Ada Boost Classifier Imported successfully
+2023-05-14 13:12:27,468:INFO:Starting cross validation
+2023-05-14 13:12:27,469:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:28,043:INFO:Calculating mean and std
+2023-05-14 13:12:28,045:INFO:Creating metrics dataframe
+2023-05-14 13:12:28,065:INFO:Uploading results into container
+2023-05-14 13:12:28,066:INFO:Uploading model into container now
+2023-05-14 13:12:28,067:INFO:_master_model_container: 9
+2023-05-14 13:12:28,067:INFO:_display_container: 2
+2023-05-14 13:12:28,067:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=3332)
+2023-05-14 13:12:28,067:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:28,207:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:28,207:INFO:Creating metrics dataframe
+2023-05-14 13:12:28,217:INFO:Initializing Gradient Boosting Classifier
+2023-05-14 13:12:28,217:INFO:Total runtime is 0.30275200208028163 minutes
+2023-05-14 13:12:28,220:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:28,221:INFO:Initializing create_model()
+2023-05-14 13:12:28,221:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:28,221:INFO:Checking exceptions
+2023-05-14 13:12:28,221:INFO:Importing libraries
+2023-05-14 13:12:28,221:INFO:Copying training dataset
+2023-05-14 13:12:28,225:INFO:Defining folds
+2023-05-14 13:12:28,225:INFO:Declaring metric variables
+2023-05-14 13:12:28,228:INFO:Importing untrained model
+2023-05-14 13:12:28,232:INFO:Gradient Boosting Classifier Imported successfully
+2023-05-14 13:12:28,239:INFO:Starting cross validation
+2023-05-14 13:12:28,240:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:28,957:INFO:Calculating mean and std
+2023-05-14 13:12:28,959:INFO:Creating metrics dataframe
+2023-05-14 13:12:28,982:INFO:Uploading results into container
+2023-05-14 13:12:28,982:INFO:Uploading model into container now
+2023-05-14 13:12:28,983:INFO:_master_model_container: 10
+2023-05-14 13:12:28,983:INFO:_display_container: 2
+2023-05-14 13:12:28,983:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=3332, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-05-14 13:12:28,983:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:29,097:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:29,097:INFO:Creating metrics dataframe
+2023-05-14 13:12:29,106:INFO:Initializing Linear Discriminant Analysis
+2023-05-14 13:12:29,107:INFO:Total runtime is 0.3175867954889934 minutes
+2023-05-14 13:12:29,109:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:29,110:INFO:Initializing create_model()
+2023-05-14 13:12:29,110:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:29,110:INFO:Checking exceptions
+2023-05-14 13:12:29,110:INFO:Importing libraries
+2023-05-14 13:12:29,110:INFO:Copying training dataset
+2023-05-14 13:12:29,115:INFO:Defining folds
+2023-05-14 13:12:29,115:INFO:Declaring metric variables
+2023-05-14 13:12:29,118:INFO:Importing untrained model
+2023-05-14 13:12:29,121:INFO:Linear Discriminant Analysis Imported successfully
+2023-05-14 13:12:29,129:INFO:Starting cross validation
+2023-05-14 13:12:29,130:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:29,414:INFO:Calculating mean and std
+2023-05-14 13:12:29,416:INFO:Creating metrics dataframe
+2023-05-14 13:12:29,443:INFO:Uploading results into container
+2023-05-14 13:12:29,443:INFO:Uploading model into container now
+2023-05-14 13:12:29,444:INFO:_master_model_container: 11
+2023-05-14 13:12:29,444:INFO:_display_container: 2
+2023-05-14 13:12:29,444:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-05-14 13:12:29,444:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:29,585:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:29,585:INFO:Creating metrics dataframe
+2023-05-14 13:12:29,597:INFO:Initializing Extra Trees Classifier
+2023-05-14 13:12:29,597:INFO:Total runtime is 0.3257384101549785 minutes
+2023-05-14 13:12:29,601:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:29,601:INFO:Initializing create_model()
+2023-05-14 13:12:29,601:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:29,601:INFO:Checking exceptions
+2023-05-14 13:12:29,601:INFO:Importing libraries
+2023-05-14 13:12:29,601:INFO:Copying training dataset
+2023-05-14 13:12:29,607:INFO:Defining folds
+2023-05-14 13:12:29,608:INFO:Declaring metric variables
+2023-05-14 13:12:29,612:INFO:Importing untrained model
+2023-05-14 13:12:29,617:INFO:Extra Trees Classifier Imported successfully
+2023-05-14 13:12:29,626:INFO:Starting cross validation
+2023-05-14 13:12:29,628:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:30,672:INFO:Calculating mean and std
+2023-05-14 13:12:30,673:INFO:Creating metrics dataframe
+2023-05-14 13:12:30,702:INFO:Uploading results into container
+2023-05-14 13:12:30,702:INFO:Uploading model into container now
+2023-05-14 13:12:30,703:INFO:_master_model_container: 12
+2023-05-14 13:12:30,703:INFO:_display_container: 2
+2023-05-14 13:12:30,703:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=3332, verbose=0, warm_start=False)
+2023-05-14 13:12:30,703:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:30,829:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:30,829:INFO:Creating metrics dataframe
+2023-05-14 13:12:30,841:INFO:Initializing Light Gradient Boosting Machine
+2023-05-14 13:12:30,841:INFO:Total runtime is 0.34647653102874765 minutes
+2023-05-14 13:12:30,845:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:30,845:INFO:Initializing create_model()
+2023-05-14 13:12:30,845:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:30,846:INFO:Checking exceptions
+2023-05-14 13:12:30,846:INFO:Importing libraries
+2023-05-14 13:12:30,846:INFO:Copying training dataset
+2023-05-14 13:12:30,852:INFO:Defining folds
+2023-05-14 13:12:30,852:INFO:Declaring metric variables
+2023-05-14 13:12:30,855:INFO:Importing untrained model
+2023-05-14 13:12:30,859:INFO:Light Gradient Boosting Machine Imported successfully
+2023-05-14 13:12:30,869:INFO:Starting cross validation
+2023-05-14 13:12:30,871:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:32,770:INFO:Calculating mean and std
+2023-05-14 13:12:32,772:INFO:Creating metrics dataframe
+2023-05-14 13:12:32,805:INFO:Uploading results into container
+2023-05-14 13:12:32,806:INFO:Uploading model into container now
+2023-05-14 13:12:32,807:INFO:_master_model_container: 13
+2023-05-14 13:12:32,807:INFO:_display_container: 2
+2023-05-14 13:12:32,807:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=3332, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-05-14 13:12:32,807:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:32,920:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:32,921:INFO:Creating metrics dataframe
+2023-05-14 13:12:32,932:INFO:Initializing Dummy Classifier
+2023-05-14 13:12:32,932:INFO:Total runtime is 0.38133439620335907 minutes
+2023-05-14 13:12:32,935:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:12:32,936:INFO:Initializing create_model()
+2023-05-14 13:12:32,936:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED42765E0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:32,936:INFO:Checking exceptions
+2023-05-14 13:12:32,936:INFO:Importing libraries
+2023-05-14 13:12:32,936:INFO:Copying training dataset
+2023-05-14 13:12:32,941:INFO:Defining folds
+2023-05-14 13:12:32,941:INFO:Declaring metric variables
+2023-05-14 13:12:32,944:INFO:Importing untrained model
+2023-05-14 13:12:32,948:INFO:Dummy Classifier Imported successfully
+2023-05-14 13:12:32,954:INFO:Starting cross validation
+2023-05-14 13:12:32,954:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:12:33,061:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,067:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,079:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,092:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,097:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,106:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,115:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,125:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,134:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,142:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-14 13:12:33,295:INFO:Calculating mean and std
+2023-05-14 13:12:33,297:INFO:Creating metrics dataframe
+2023-05-14 13:12:33,335:INFO:Uploading results into container
+2023-05-14 13:12:33,335:INFO:Uploading model into container now
+2023-05-14 13:12:33,336:INFO:_master_model_container: 14
+2023-05-14 13:12:33,336:INFO:_display_container: 2
+2023-05-14 13:12:33,336:INFO:DummyClassifier(constant=None, random_state=3332, strategy='prior')
+2023-05-14 13:12:33,336:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:33,453:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:12:33,453:INFO:Creating metrics dataframe
+2023-05-14 13:12:33,471:INFO:Initializing create_model()
+2023-05-14 13:12:33,472:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=3332), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:33,472:INFO:Checking exceptions
+2023-05-14 13:12:33,475:INFO:Importing libraries
+2023-05-14 13:12:33,475:INFO:Copying training dataset
+2023-05-14 13:12:33,478:INFO:Defining folds
+2023-05-14 13:12:33,478:INFO:Declaring metric variables
+2023-05-14 13:12:33,478:INFO:Importing untrained model
+2023-05-14 13:12:33,478:INFO:Declaring custom model
+2023-05-14 13:12:33,478:INFO:Ada Boost Classifier Imported successfully
+2023-05-14 13:12:33,479:INFO:Cross validation set to False
+2023-05-14 13:12:33,479:INFO:Fitting Model
+2023-05-14 13:12:33,608:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=3332)
+2023-05-14 13:12:33,608:INFO:create_model() successfully completed......................................
+2023-05-14 13:12:33,736:INFO:_master_model_container: 14
+2023-05-14 13:12:33,736:INFO:_display_container: 2
+2023-05-14 13:12:33,736:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=3332)
+2023-05-14 13:12:33,736:INFO:compare_models() successfully completed......................................
+2023-05-14 13:12:33,761:INFO:Initializing create_model()
+2023-05-14 13:12:33,762:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:12:33,762:INFO:Checking exceptions
+2023-05-14 13:14:23,691:INFO:Initializing create_model()
+2023-05-14 13:14:23,692:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:14:23,692:INFO:Checking exceptions
+2023-05-14 13:22:05,654:INFO:Initializing create_model()
+2023-05-14 13:22:05,654:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:22:05,654:INFO:Checking exceptions
+2023-05-14 13:25:49,643:INFO:Initializing create_model()
+2023-05-14 13:25:49,643:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:25:49,644:INFO:Checking exceptions
+2023-05-14 13:27:44,858:INFO:Initializing create_model()
+2023-05-14 13:27:44,858:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:27:44,858:INFO:Checking exceptions
+2023-05-14 13:28:19,240:INFO:Initializing create_model()
+2023-05-14 13:28:19,240:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=xgboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:28:19,240:INFO:Checking exceptions
+2023-05-14 13:31:50,642:INFO:Initializing create_model()
+2023-05-14 13:31:50,642:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:31:50,642:INFO:Checking exceptions
+2023-05-14 13:31:50,787:INFO:Importing libraries
+2023-05-14 13:31:50,789:INFO:Copying training dataset
+2023-05-14 13:31:50,805:INFO:Defining folds
+2023-05-14 13:31:50,805:INFO:Declaring metric variables
+2023-05-14 13:31:50,809:INFO:Importing untrained model
+2023-05-14 13:31:50,818:INFO:Logistic Regression Imported successfully
+2023-05-14 13:31:50,827:INFO:Starting cross validation
+2023-05-14 13:31:50,841:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:32:00,777:INFO:Calculating mean and std
+2023-05-14 13:32:00,782:INFO:Creating metrics dataframe
+2023-05-14 13:32:00,802:INFO:Finalizing model
+2023-05-14 13:32:01,111:INFO:Uploading results into container
+2023-05-14 13:32:01,112:INFO:Uploading model into container now
+2023-05-14 13:32:01,139:INFO:_master_model_container: 15
+2023-05-14 13:32:01,139:INFO:_display_container: 3
+2023-05-14 13:32:01,140:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-14 13:32:01,141:INFO:create_model() successfully completed......................................
+2023-05-14 13:32:04,889:INFO:Initializing tune_model()
+2023-05-14 13:32:04,890:INFO:tune_model(estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>)
+2023-05-14 13:32:04,890:INFO:Checking exceptions
+2023-05-14 13:32:04,916:INFO:Copying training dataset
+2023-05-14 13:32:04,920:INFO:Checking base model
+2023-05-14 13:32:04,920:INFO:Base model : Logistic Regression
+2023-05-14 13:32:04,923:INFO:Declaring metric variables
+2023-05-14 13:32:04,927:INFO:Defining Hyperparameters
+2023-05-14 13:32:05,067:INFO:Tuning with n_jobs=-1
+2023-05-14 13:32:05,067:INFO:Initializing RandomizedSearchCV
+2023-05-14 13:32:05,637:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,708:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,713:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,761:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,808:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,859:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,881:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:05,925:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,312:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,338:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,342:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,375:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,588:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,595:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,595:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,601:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,940:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:06,992:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:07,109:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:07,178:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:07,206:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:07,324:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:07,433:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:07,698:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,019:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,219:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,318:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,345:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,349:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,386:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,410:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,525:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,600:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,650:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,688:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:08,920:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,076:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,157:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,171:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,285:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,293:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,343:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,421:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,449:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,630:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,804:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,813:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,853:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,954:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,958:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:09,998:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,069:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,127:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,262:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,451:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,474:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,497:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,527:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,640:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,648:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,702:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,732:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,897:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:10,967:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,056:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,157:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,323:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,371:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,539:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,638:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,758:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,814:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:11,981:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:12,092:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:12,176:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:12,402:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:12,537:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:12,618:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:12,888:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,026:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,121:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,243:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,340:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,384:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,394:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,634:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,682:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:13,753:WARNING:C:\Users\ASUS\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-14 13:32:15,113:INFO:best_params: {'actual_estimator__class_weight': {}, 'actual_estimator__C': 5.602}
+2023-05-14 13:32:15,114:INFO:Hyperparameter search completed
+2023-05-14 13:32:15,114:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:32:15,115:INFO:Initializing create_model()
+2023-05-14 13:32:15,115:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001CED2308DF0>, model_only=True, return_train_score=False, kwargs={'class_weight': {}, 'C': 5.602})
+2023-05-14 13:32:15,115:INFO:Checking exceptions
+2023-05-14 13:32:15,116:INFO:Importing libraries
+2023-05-14 13:32:15,116:INFO:Copying training dataset
+2023-05-14 13:32:15,118:INFO:Defining folds
+2023-05-14 13:32:15,119:INFO:Declaring metric variables
+2023-05-14 13:32:15,122:INFO:Importing untrained model
+2023-05-14 13:32:15,122:INFO:Declaring custom model
+2023-05-14 13:32:15,127:INFO:Logistic Regression Imported successfully
+2023-05-14 13:32:15,134:INFO:Starting cross validation
+2023-05-14 13:32:15,135:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:32:15,827:INFO:Calculating mean and std
+2023-05-14 13:32:15,829:INFO:Creating metrics dataframe
+2023-05-14 13:32:15,834:INFO:Finalizing model
+2023-05-14 13:32:16,110:INFO:Uploading results into container
+2023-05-14 13:32:16,111:INFO:Uploading model into container now
+2023-05-14 13:32:16,111:INFO:_master_model_container: 16
+2023-05-14 13:32:16,111:INFO:_display_container: 4
+2023-05-14 13:32:16,112:INFO:LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-14 13:32:16,112:INFO:create_model() successfully completed......................................
+2023-05-14 13:32:16,249:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:32:16,249:INFO:choose_better activated
+2023-05-14 13:32:16,252:INFO:SubProcess create_model() called ==================================
+2023-05-14 13:32:16,253:INFO:Initializing create_model()
+2023-05-14 13:32:16,253:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:32:16,253:INFO:Checking exceptions
+2023-05-14 13:32:16,256:INFO:Importing libraries
+2023-05-14 13:32:16,256:INFO:Copying training dataset
+2023-05-14 13:32:16,260:INFO:Defining folds
+2023-05-14 13:32:16,260:INFO:Declaring metric variables
+2023-05-14 13:32:16,261:INFO:Importing untrained model
+2023-05-14 13:32:16,261:INFO:Declaring custom model
+2023-05-14 13:32:16,261:INFO:Logistic Regression Imported successfully
+2023-05-14 13:32:16,261:INFO:Starting cross validation
+2023-05-14 13:32:16,262:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:32:16,927:INFO:Calculating mean and std
+2023-05-14 13:32:16,928:INFO:Creating metrics dataframe
+2023-05-14 13:32:16,931:INFO:Finalizing model
+2023-05-14 13:32:17,038:INFO:Uploading results into container
+2023-05-14 13:32:17,038:INFO:Uploading model into container now
+2023-05-14 13:32:17,039:INFO:_master_model_container: 17
+2023-05-14 13:32:17,039:INFO:_display_container: 5
+2023-05-14 13:32:17,039:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-14 13:32:17,039:INFO:create_model() successfully completed......................................
+2023-05-14 13:32:17,173:INFO:SubProcess create_model() end ==================================
+2023-05-14 13:32:17,174:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False) result for Accuracy is 0.9497
+2023-05-14 13:32:17,174:INFO:LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False) result for Accuracy is 0.9547
+2023-05-14 13:32:17,174:INFO:LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False) is best model
+2023-05-14 13:32:17,174:INFO:choose_better completed
+2023-05-14 13:32:17,185:INFO:_master_model_container: 17
+2023-05-14 13:32:17,185:INFO:_display_container: 4
+2023-05-14 13:32:17,185:INFO:LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-14 13:32:17,185:INFO:tune_model() successfully completed......................................
+2023-05-14 13:32:37,939:INFO:Initializing create_model()
+2023-05-14 13:32:37,939:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-14 13:32:37,939:INFO:Checking exceptions
+2023-05-14 13:32:37,965:INFO:Importing libraries
+2023-05-14 13:32:37,965:INFO:Copying training dataset
+2023-05-14 13:32:37,970:INFO:Defining folds
+2023-05-14 13:32:37,970:INFO:Declaring metric variables
+2023-05-14 13:32:37,974:INFO:Importing untrained model
+2023-05-14 13:32:37,978:INFO:Logistic Regression Imported successfully
+2023-05-14 13:32:37,984:INFO:Starting cross validation
+2023-05-14 13:32:37,985:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-14 13:32:38,654:INFO:Calculating mean and std
+2023-05-14 13:32:38,654:INFO:Creating metrics dataframe
+2023-05-14 13:32:38,661:INFO:Finalizing model
+2023-05-14 13:32:38,767:INFO:Uploading results into container
+2023-05-14 13:32:38,768:INFO:Uploading model into container now
+2023-05-14 13:32:38,777:INFO:_master_model_container: 18
+2023-05-14 13:32:38,777:INFO:_display_container: 5
+2023-05-14 13:32:38,777:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-14 13:32:38,777:INFO:create_model() successfully completed......................................
+2023-05-14 13:32:43,736:INFO:Initializing evaluate_model()
+2023-05-14 13:32:43,736:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-05-14 13:32:43,760:INFO:Initializing plot_model()
+2023-05-14 13:32:43,760:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:32:43,760:INFO:Checking exceptions
+2023-05-14 13:32:43,762:INFO:Preloading libraries
+2023-05-14 13:32:43,763:INFO:Copying training dataset
+2023-05-14 13:32:43,763:INFO:Plot type: pipeline
+2023-05-14 13:32:55,207:INFO:Initializing plot_model()
+2023-05-14 13:32:55,207:INFO:plot_model(plot=pr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:32:55,207:INFO:Checking exceptions
+2023-05-14 13:32:55,210:INFO:Preloading libraries
+2023-05-14 13:32:55,211:INFO:Copying training dataset
+2023-05-14 13:32:55,211:INFO:Plot type: pr
+2023-05-14 13:32:55,279:INFO:Fitting Model
+2023-05-14 13:32:55,279:INFO:Scoring test/hold-out set
+2023-05-14 13:32:55,382:INFO:Visual Rendered Successfully
+2023-05-14 13:32:55,530:INFO:plot_model() successfully completed......................................
+2023-05-14 13:32:56,799:INFO:Initializing plot_model()
+2023-05-14 13:32:56,800:INFO:plot_model(plot=feature_all, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:32:56,800:INFO:Checking exceptions
+2023-05-14 13:32:56,801:INFO:Preloading libraries
+2023-05-14 13:32:56,802:INFO:Copying training dataset
+2023-05-14 13:32:56,802:INFO:Plot type: feature_all
+2023-05-14 13:32:57,076:INFO:Visual Rendered Successfully
+2023-05-14 13:32:57,217:INFO:plot_model() successfully completed......................................
+2023-05-14 13:32:58,414:INFO:Initializing plot_model()
+2023-05-14 13:32:58,415:INFO:plot_model(plot=manifold, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:32:58,415:INFO:Checking exceptions
+2023-05-14 13:32:58,416:INFO:Preloading libraries
+2023-05-14 13:32:58,417:INFO:Copying training dataset
+2023-05-14 13:32:58,417:INFO:Plot type: manifold
+2023-05-14 13:32:58,558:INFO:Fitting & Transforming Model
+2023-05-14 13:32:59,860:INFO:Visual Rendered Successfully
+2023-05-14 13:33:00,106:INFO:plot_model() successfully completed......................................
+2023-05-14 13:33:00,115:INFO:Initializing plot_model()
+2023-05-14 13:33:00,115:INFO:plot_model(plot=calibration, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:33:00,115:INFO:Checking exceptions
+2023-05-14 13:33:00,117:INFO:Preloading libraries
+2023-05-14 13:33:00,118:INFO:Copying training dataset
+2023-05-14 13:33:00,118:INFO:Plot type: calibration
+2023-05-14 13:33:00,129:INFO:Scoring test/hold-out set
+2023-05-14 13:33:00,265:INFO:Visual Rendered Successfully
+2023-05-14 13:33:00,476:INFO:plot_model() successfully completed......................................
+2023-05-14 13:33:01,355:INFO:Initializing plot_model()
+2023-05-14 13:33:01,356:INFO:plot_model(plot=vc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:33:01,356:INFO:Checking exceptions
+2023-05-14 13:33:01,358:INFO:Preloading libraries
+2023-05-14 13:33:01,358:INFO:Copying training dataset
+2023-05-14 13:33:01,358:INFO:Plot type: vc
+2023-05-14 13:33:01,358:INFO:Determining param_name
+2023-05-14 13:33:01,359:INFO:param_name: l1_ratio
+2023-05-14 13:33:01,426:INFO:Fitting Model
+2023-05-14 13:35:13,492:INFO:Visual Rendered Successfully
+2023-05-14 13:35:13,693:INFO:plot_model() successfully completed......................................
+2023-05-14 13:35:13,702:INFO:Initializing plot_model()
+2023-05-14 13:35:13,702:INFO:plot_model(plot=feature, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:35:13,703:INFO:Checking exceptions
+2023-05-14 13:35:13,706:INFO:Preloading libraries
+2023-05-14 13:35:13,706:INFO:Copying training dataset
+2023-05-14 13:35:13,706:INFO:Plot type: feature
+2023-05-14 13:35:13,861:INFO:Visual Rendered Successfully
+2023-05-14 13:35:14,007:INFO:plot_model() successfully completed......................................
+2023-05-14 13:35:14,013:INFO:Initializing plot_model()
+2023-05-14 13:35:14,013:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:35:14,013:INFO:Checking exceptions
+2023-05-14 13:35:14,017:INFO:Preloading libraries
+2023-05-14 13:35:14,017:INFO:Copying training dataset
+2023-05-14 13:35:14,017:INFO:Plot type: confusion_matrix
+2023-05-14 13:35:14,088:INFO:Fitting Model
+2023-05-14 13:35:14,088:INFO:Scoring test/hold-out set
+2023-05-14 13:35:14,164:INFO:Visual Rendered Successfully
+2023-05-14 13:35:14,358:INFO:plot_model() successfully completed......................................
+2023-05-14 13:35:14,375:INFO:Initializing plot_model()
+2023-05-14 13:35:14,375:INFO:plot_model(plot=vc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:35:14,375:INFO:Checking exceptions
+2023-05-14 13:35:14,377:INFO:Preloading libraries
+2023-05-14 13:35:14,377:INFO:Copying training dataset
+2023-05-14 13:35:14,377:INFO:Plot type: vc
+2023-05-14 13:35:14,377:INFO:Determining param_name
+2023-05-14 13:35:14,377:INFO:param_name: l1_ratio
+2023-05-14 13:35:14,443:INFO:Fitting Model
+2023-05-14 13:37:25,547:INFO:Visual Rendered Successfully
+2023-05-14 13:37:25,713:INFO:plot_model() successfully completed......................................
+2023-05-14 13:37:25,719:INFO:Initializing plot_model()
+2023-05-14 13:37:25,720:INFO:plot_model(plot=confusion_matrix, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LogisticRegression(C=5.602, class_weight={}, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3332, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CED4360700>, system=True)
+2023-05-14 13:37:25,720:INFO:Checking exceptions
+2023-05-14 13:37:25,723:INFO:Preloading libraries
+2023-05-14 13:37:25,724:INFO:Copying training dataset
+2023-05-14 13:37:25,724:INFO:Plot type: confusion_matrix
+2023-05-14 13:37:25,797:INFO:Fitting Model
+2023-05-14 13:37:25,797:INFO:Scoring test/hold-out set
+2023-05-14 13:37:25,872:INFO:Visual Rendered Successfully
+2023-05-14 13:37:26,055:INFO:plot_model() successfully completed......................................
