@@ -12,6 +12,8 @@ All of my Data Science ; Machine Learning Projects .
 | Breast Cancer Detection Using Pycaret | [Breast Cancer Detection Using Pycaret](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/6%20.%20Breast%20Cancer%20Detection%20Using%20Pycaret) |
 | Loan Prediction Analysis - Classification | [Loan Prediction Analysis - Classification](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/7%20.%20Loan%20Prediction%20Analysis%20-%20Classification) |
 | Loan Prediction & Classification Using PySpark | [Loan Prediction & Classification Using PySpark](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/8%20.%20Loan%20Prediction%20%26%20Classification%20Using%20PySpark) |
+| Horse Survival Prediction | [Horse Survival Prediction](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/9%20.%20Horse%20Survival%20Prediction) |
+
 
 # License
 
