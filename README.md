@@ -16,5 +16,4 @@ All of my Data Science ; Machine Learning Projects .
 
 
 # License
-
 [MIT LICENSE](LICENSE)
