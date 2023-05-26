@@ -13,7 +13,7 @@ All of my Data Science ; Machine Learning Projects .
 | Loan Prediction Analysis - Classification | [Loan Prediction Analysis - Classification](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/7%20.%20Loan%20Prediction%20Analysis%20-%20Classification) |
 | Loan Prediction & Classification Using PySpark | [Loan Prediction & Classification Using PySpark](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/8%20.%20Loan%20Prediction%20%26%20Classification%20Using%20PySpark) |
 | Horse Survival Prediction | [Horse Survival Prediction](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/9%20.%20Horse%20Survival%20Prediction) |
-
+| SMS Spam Detection | [SMS Spam Detection](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/10%20.%20SMS%20Spam%20Detection) |
 
 # License
 [MIT LICENSE](LICENSE)
