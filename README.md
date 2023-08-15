@@ -15,9 +15,9 @@ All of my Data Science ; Machine Learning Projects .
 | Horse Survival Prediction | [Horse Survival Prediction](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/9%20.%20Horse%20Survival%20Prediction) |
 | SMS Spam Detection | [SMS Spam Detection](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/10%20.%20SMS%20Spam%20Detection) |
 | Traffic Forecast - Time Series Analysis | [Traffic Forecast - Time Series Analysis](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/11%20.%20Traffic%20Forecast%20-%20Time%20Series%20Analysis) |
-| Speech to Text - Speech Recognition | [Speech to Text - Speech Recognition](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/012%20.%20Speech%20to%20Text%20-%20Speech%20Recognition) |
-| Turkiye Student Evaluation Analysis | [Turkiye Student Evaluation Analysis](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/013%20.%20Turkiye%20Student%20Evaluation%20Analysis) |
-| Water Quality Classification | [Water Quality Classification](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/014%20.%20Water%20Quality%20Classification) |
+| Speech to Text - Speech Recognition | [Speech to Text - Speech Recognition](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/12%20.%20Speech%20to%20Text%20-%20Speech%20Recognition) |
+| Turkiye Student Evaluation Analysis | [Turkiye Student Evaluation Analysis](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/13%20.%20Turkiye%20Student%20Evaluation%20Analysis) |
+| Water Quality Classification | [Water Quality Classification](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/14%20.%20Water%20Quality%20Classification) |
 
 
 
