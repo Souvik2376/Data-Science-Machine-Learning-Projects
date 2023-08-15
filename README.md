@@ -15,6 +15,7 @@ Go to the project directory
 ```bash
   cd Data-Science-Machine-Learning-Projects
 ```
+
 Run project ( First open command promt or powershell )
 
 ```bash
