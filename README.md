@@ -2,6 +2,25 @@
 
 All of my Data Science ; Machine Learning Projects . 
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects.git
+```
+
+Go to the project directory
+
+```bash
+  cd Data-Science-Machine-Learning-Projects
+```
+Run project ( First open command promt or powershell )
+
+```bash
+  jupyter notebook
+```
+
 | Project            | Check Out                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Bigmart Sales Prediction  & Analysis | [Bigmart Sales Prediction  & Analysis](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/1%20.%20Bigmart%20Sales%20Prediction%20%20%26%20Analysis) |
