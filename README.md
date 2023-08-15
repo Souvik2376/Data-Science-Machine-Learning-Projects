@@ -18,6 +18,8 @@ All of my Data Science ; Machine Learning Projects .
 | Speech to Text - Speech Recognition | [Speech to Text - Speech Recognition](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/12%20.%20Speech%20to%20Text%20-%20Speech%20Recognition) |
 | Turkiye Student Evaluation Analysis | [Turkiye Student Evaluation Analysis](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/13%20.%20Turkiye%20Student%20Evaluation%20Analysis) |
 | Water Quality Classification | [Water Quality Classification](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/14%20.%20Water%20Quality%20Classification) |
+| Face Detection (OpenCV) - Computer Vision | [Face Detection (OpenCV) - Computer Vision](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/15%20.%20Face%20Detection%20(OpenCV)%20-%20Computer%20Vision) |
+| Face Mask Detection Using OpenCV | [Face Mask Detection Using OpenCV](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/16%20.%20Face%20Mask%20Detection%20Using%20OpenCV) |
 
 
 
