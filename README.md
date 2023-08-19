@@ -40,7 +40,7 @@ Run project ( First open command promt or powershell )
 | Water Quality Classification | [Water Quality Classification](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/14%20.%20Water%20Quality%20Classification) |
 | Face Detection (OpenCV) - Computer Vision | [Face Detection (OpenCV) - Computer Vision](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/15%20.%20Face%20Detection%20(OpenCV)%20-%20Computer%20Vision) |
 | Face Mask Detection Using OpenCV | [Face Mask Detection Using OpenCV](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/16%20.%20Face%20Mask%20Detection%20Using%20OpenCV) |
-
+| Submarine Rock vs Mine detection | [Submarine Rock vs Mine detection](https://github.com/Souvik2376/Data-Science-Machine-Learning-Projects/tree/main/17%20.%20Submarine%20Rock%20vs%20Mine%20detection) |
 
 
 # License
