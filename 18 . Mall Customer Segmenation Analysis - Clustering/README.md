@@ -16,6 +16,6 @@ You are owing a supermarket mall and through membership cards, you have some bas
 - Annual income
 - Spending score
 
-**Download link:** https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python
+
 
 
