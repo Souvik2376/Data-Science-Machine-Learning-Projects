@@ -1,0 +1,1 @@
+web: sb setup.sh && steamlit run app.py
